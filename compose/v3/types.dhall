@@ -111,16 +111,21 @@ let ServiceVolume
     : Type
     = < Short : Text | Long : ServiceVolumeLong >
 
-let ServiceNetwork
+
+let ServiceNetworkLong
     : Type
     = { aliases : Optional (List Text)
       , ipv4_address : Optional Text
       , ipv6_address : Optional Text
       }
 
+let ServiceNetwork
+    : Type
+    = < Short : Text | Long : ServiceNetworkLong >
+
 let ServiceNetworks
     : Type
-    = < List : List Text | Map : Map Text ServiceNetwork >
+    = Map Text (Optional ServiceNetwork)
 
 let Service
     : Type
