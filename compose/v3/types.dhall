@@ -51,7 +51,7 @@ let Network
 
 let Networks
     : Type
-    = < List : List Text | Map : Map Text Network >
+    = Map Text (Optional Network)
 
 let Ulimits
     : Type
