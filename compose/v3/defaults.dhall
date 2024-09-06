@@ -79,7 +79,7 @@ let Service =
         }
       : types.Service
 
-let Network = { external = None Bool, name = None Text }
+let Network = { external = None Bool, name = None Text, driver = None Text }
 
 let Secret =
         { file = None Text

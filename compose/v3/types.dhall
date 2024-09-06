@@ -47,7 +47,7 @@ let Logging
 
 let Network
     : Type
-    = { external : Optional Bool, name : Optional Text }
+    = { external : Optional Bool, name : Optional Text , driver : Optional Text}
 
 let Networks
     : Type
